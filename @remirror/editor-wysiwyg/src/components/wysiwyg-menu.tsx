@@ -150,6 +150,8 @@ const bubbleMenuItems: Array<[
 export const BubbleMenu: FC<BubbleMenuProps> = ({ linkActivated = false, deactivateLink, activateLink }) => {
   const { actions, getPositionerProps, helpers, state, manager } = useRemirrorContext<WysiwygExtensions>();
 
+  console.log('state from BubbleMenu', state);
+
   const positionerProps = getPositionerProps({
     ...bubblePositioner,
     hasChanged: () => true,

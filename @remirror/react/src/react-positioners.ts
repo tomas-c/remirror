@@ -68,6 +68,8 @@ export const bubblePositioner: Positioner = {
       return bubblePositioner.initialPosition;
     }
 
+    console.log('view state form bubblePositioner', view.state);
+
     // These are in screen coordinates
     const start = view.coordsAtPos(from);
     const end = view.coordsAtPos(to);
